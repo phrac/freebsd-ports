@@ -1,4 +1,4 @@
-bdata/pkgconfig/libtoxcore.pc
+libdata/pkgconfig/libtoxcore.pc
 bin/DHT_bootstrap
 include/tox/tox.h
 lib/libtoxcore.a
