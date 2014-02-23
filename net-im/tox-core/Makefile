@@ -1,9 +1,10 @@
 PORTNAME=	tox-core
-PORTVERSION=	0.2.0
+PORTVERSION=	20140223
 CATEGORIES=	net-im
+MASTER_SITES=	GH
 
 MAINTAINER=	derek@disflux.com
-COMMENT=	Free as in freedom Skype replacement.
+COMMENT=	A free as in freedom Skype replacement.
 
 LICENSE=	GPLv3
 

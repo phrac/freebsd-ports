@@ -1,0 +1,10 @@
+bin/DHT_bootstrap
+include/tox/tox.h
+lib/libtoxcore.a
+lib/libtoxcore.la
+lib/libtoxcore.so
+lib/libtoxcore.so.0
+lib/pkgconfig/libtoxcore.pc
+@dirrmtry lib/pkgconfig
+@dirrmtry include/tox
+
