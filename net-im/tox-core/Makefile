@@ -1,3 +1,6 @@
+# Created by: Derek Musselmann aka phrac <derek@disflux.com>
+# $FreeBSD$
+
 PORTNAME=	tox-core
 PORTVERSION=	20140223
 CATEGORIES=	net-im
@@ -7,6 +10,8 @@ MAINTAINER=	derek@disflux.com
 COMMENT=	A free as in freedom Skype replacement.
 
 LICENSE=	GPLv3
+
+LIB_DEPENDS=	libsodium.so:${PORTSDIR}/security/libsodium
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	irungentoo
@@ -18,9 +23,14 @@ DIST_SUBDIR=	${PORTNAME}
 
 USE_AUTOTOOLS=	autoconf
 
-LIB_DEPENDS=   libsodium.so:${PORTSDIR}/security/libsodium
+USES=		pathfix
+
+CONFIGURE_ARGS+=--with-pkgconfigdir=${LOCALDIR}/libdata/pkgconfig
 
 pre-configure:
 	@cd ${WRKSRC} && ${SH} autogen.sh
+
+post-patch:
+	@${REINPLACE_CMD} -e 's|(libdir)|{LOCALDIR}/libdata|g' ${WRKSRC}/Makefile.am
 
 .include <bsd.port.mk>
