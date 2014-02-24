@@ -1,10 +1,8 @@
-libdata/pkgconfig/libtoxcore.pc
 bin/DHT_bootstrap
 include/tox/tox.h
 lib/libtoxcore.a
 lib/libtoxcore.la
 lib/libtoxcore.so
 lib/libtoxcore.so.0
+libdata/pkgconfig/libtoxcore.pc
 @dirrmtry include/tox
-@unexec rmdir >/dev/null 2>&1 /libdata/pkgconfig || :
-@unexec rmdir >/dev/null 2>&1 /libdata || :

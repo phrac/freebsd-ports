@@ -25,12 +25,10 @@ USE_AUTOTOOLS=	autoconf
 
 USES=		pathfix
 
-CONFIGURE_ARGS+=--with-pkgconfigdir=${LOCALDIR}/libdata/pkgconfig
-
 pre-configure:
 	@cd ${WRKSRC} && ${SH} autogen.sh
 
 post-patch:
-	@${REINPLACE_CMD} -e 's|(libdir)|{LOCALDIR}/libdata|g' ${WRKSRC}/Makefile.am
+	@${REINPLACE_CMD} -e 's|(libdir)|{PREFIX}/libdata|g' ${WRKSRC}/Makefile.am
 
 .include <bsd.port.mk>
