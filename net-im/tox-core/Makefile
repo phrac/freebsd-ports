@@ -23,8 +23,6 @@ GH_TAGNAME=	${GH_COMMIT}
 
 USE_AUTOTOOLS=	autoconf
 
-USES=		pathfix
-
 pre-configure:
 	@cd ${WRKSRC} && ${SH} autogen.sh
 
