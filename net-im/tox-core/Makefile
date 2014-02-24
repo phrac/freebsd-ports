@@ -7,7 +7,7 @@ CATEGORIES=	net-im
 MASTER_SITES=	GH
 
 MAINTAINER=	derek@disflux.com
-COMMENT=	A free as in freedom Skype replacement.
+COMMENT=	A free as in freedom Skype replacement
 
 LICENSE=	GPLv3
 
@@ -18,8 +18,6 @@ GH_ACCOUNT=	irungentoo
 GH_PROJECT=	ProjectTox-Core
 GH_COMMIT=	f219fb4
 GH_TAGNAME=	${GH_COMMIT}
-
-DIST_SUBDIR=	${PORTNAME}
 
 USE_AUTOTOOLS=	autoconf
 
