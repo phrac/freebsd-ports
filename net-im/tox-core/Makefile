@@ -13,6 +13,8 @@ LICENSE=	GPLv3
 
 LIB_DEPENDS=	libsodium.so:${PORTSDIR}/security/libsodium
 
+USE_LDCONFIG=	yes
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	irungentoo
 GH_PROJECT=	ProjectTox-Core
