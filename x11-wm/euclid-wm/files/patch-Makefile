@@ -1,0 +1,35 @@
+--- Makefile.orig	2014-02-25 11:44:15.164542491 -0600
++++ Makefile	2014-02-25 11:46:16.659534394 -0600
+@@ -1,4 +1,4 @@
+-PREFIX    = usr
++PREFIX    = /usr/local
+ SHAREDIR  = ${PREFIX}/share
+ MANDIR    = ${SHAREDIR}/man
+ BINDIR    = ${PREFIX}/bin
+@@ -6,15 +6,21 @@
+ VER	  = 0.4.2
+ DIST	  = euclid-wm-${VER}
+ 
++X11INC 	  = ${PREFIX}/include
++X11LIB 	  = ${PREFIX}/lib
+ 
+-ifndef ${XDG_CONFIG_HOME}
++XINERAMALIBS = -lXinerama
++
++INCS = -I${X11INC}
++
++.ifdef XDG_CONFIG_HOME
+ XDG_CONFIG_HOME=${HOME}/.config
+-endif
++.endif
+ CONFDIR = ${XDG_CONFIG_HOME}/euclid-wm
+ 
+-CC = cc -pedantic -Wall 
+-CFLAGS = -O2 -g -std=c99 
+-LDFLAGS = -lX11 -lXinerama
++CC = cc -pedantic -Wall
++CFLAGS = -O2 -g -std=c99 ${INCS}
++LDFLAGS = -s -lm -L${X11LIB} -lX11 -lXinerama
+ 
+ .PHONY: all install install_conf clean uninstall dist dist_clean
+ 
