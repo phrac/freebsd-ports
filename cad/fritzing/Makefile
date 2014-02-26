@@ -11,7 +11,7 @@ DISTNAME=	fritzing-0.8.7b.source
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	derek@disflux.com
-COMMENT=	xA free as in freedom Skype replacement
+COMMENT=	Fritzing is an initiative to work with interactive electronics.
 
 LICENSE=	GPLv3
 
