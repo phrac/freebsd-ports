@@ -23,7 +23,7 @@ GH_PROJECT=	Venom
 GH_COMMIT=	140155e
 GH_TAGNAME=	${GH_COMMIT}
 
-USES=		cmake
+USES=		cmake desktop-file-utils
 USE_GNOME=	gtk30
 
 .include <bsd.port.mk>
