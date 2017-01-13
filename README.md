@@ -4,10 +4,10 @@ My efforts to port various software to FreeBSD.
     - **tox-core/**     The core of Tox, a free Skype replacement
     - **toxic/**        Reference CLI for Tox
     - **venom/**        A Vala/GTK client for Tox
-
+- **net-p2p/**
+    - **radarr/**	Port of sonarr for movies
 - **x11/wm/**
     - **euclid-wm**     Tiling window manager with easy keyboard management
-
 - **cad/**
     - **fritzing**      A project to work creatively with interactive electronics
 
