@@ -1,4 +1,3 @@
-# $FreeBSD: head/net-p2p/sonarr/Makefile 430494 2017-01-03 18:28:10Z feld $
 
 PORTNAME=	radarr
 PORTVERSION=	0.2.0.99
