@@ -7,7 +7,7 @@ MASTER_SITES=	https://github.com/Radarr/Radarr/releases/download/v${PORTVERSION}
 DISTNAME=	Radarr.develop.${PORTVERSION}.linux
 
 MAINTAINER=	derek@disflux.com
-COMMENT=	PVR for Usenet and BitTorrent users
+COMMENT=	Movie PVR for Usenet and BitTorrent users
 
 LICENSE=	GPLv3
 
